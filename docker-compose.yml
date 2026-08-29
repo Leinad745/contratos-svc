@@ -1,0 +1,8 @@
+services:
+  contratos-svc:
+    build: .
+    image: duoc/caso11-contratos:1.0.0
+    container_name: caso11-contratos-svc
+    ports:
+      - "${PORT:-8080}:8080"
+    restart: unless-stopped
