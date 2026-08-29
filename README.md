@@ -62,3 +62,8 @@ docker compose up --build
 mvn test      # unit tests + Cucumber
 mvn verify    # + verificación de cobertura JaCoCo (100% LINE, falla si baja)
 ```
+
+## Modelo de Ramificacion
+
+Para el presente proyecto se ha decidido tomar **GitFlow** , debido a la baja cantidad de pushes requeridos que puedan causar problemas de compatibilidad, asi se puede trabajar en conjunto y de manera separada para asegurar la estabilidad del proyecto
+
