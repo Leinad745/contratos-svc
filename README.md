@@ -67,6 +67,8 @@ mvn verify    # + verificación de cobertura JaCoCo (100% LINE, falla si baja)
 
 Para el presente proyecto se ha decidido tomar **GitFlow** , debido a la baja cantidad de pushes requeridos que puedan causar problemas de compatibilidad, asi se puede trabajar en conjunto y de manera separada para asegurar la estabilidad del proyecto
 
+**Daniel**: La prioridad dentro de los equipos de trabajo deberia centrarse en la correcta aplicacion de la metodologia DevOps. Pues un correcto flujo de trabajo, optimizando la correcta entrega de artefactos, creara una eficiencia laboral y de desarrollo completa y armonica con el resto del ecosistema de desarrollo de la empresa. Herramientas como git, Github Actions, Docker y demas pueden automatizar todos estos flujos que antiguamente se hacian de manera manual de una forma concisa y correcta.
+
 **Matías:** La implementación de GitFlow en conjunto con integración continua demuestra la importancia del desacoplamiento entre el desarrollo activo y los despliegues a producción. Establecer ramas de soporte (`develop`) y aislamiento para características (`feature/`) minimiza colisiones entre desarrolladores, mientras que el uso de `hotfix/` garantiza resoluciones rápidas en fallos críticos sin interrumpir el trabajo en curso. Por su parte, la automatización mediante GitHub Actions actúa como un control de calidad preventivo esencial: verificar compilación, análisis y pruebas en cada push o pull request elimina el margen de error humano y acelera la entrega de software confiable.
 
 ## Uso de IA
