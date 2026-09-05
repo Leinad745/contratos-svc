@@ -3,7 +3,7 @@
 Microservicio correspondiente al **caso caso11 — InmoNube** (Plataforma inmobiliaria) de la Evaluación Parcial N°1.
 
 | | |
-| --- | --- |
+|---|---|
 | Stack | Spring Boot 3.3 · Java 21 · Maven · Spring Data JPA · H2 · springdoc-openapi |
 | Calidad | JaCoCo cobertura LINE 100% · Cucumber (BDD) alineado a endpoints REST |
 | Entrega | Docker / Docker Compose |
@@ -24,7 +24,7 @@ Al ejecutar el servicio, `http://localhost:8080/` muestra la página de presenta
 ## Endpoints
 
 | Método | Ruta | Descripción |
-| -------- | ------ | ------------- |
+|--------|------|-------------|
 | GET | `/api/contratos` | Lista todos los recursos |
 | GET | `/api/contratos/{id}` | Obtiene un recurso por id |
 | POST | `/api/contratos` | Crea un recurso |
@@ -67,10 +67,12 @@ mvn verify    # + verificación de cobertura JaCoCo (100% LINE, falla si baja)
 
 Para el presente proyecto se ha decidido tomar **GitFlow** , debido a la baja cantidad de pushes requeridos que puedan causar problemas de compatibilidad, asi se puede trabajar en conjunto y de manera separada para asegurar la estabilidad del proyecto
 
-## Reflexiones finales
-
-**Daniel**: La prioridad dentro de los equipos de trabajo deberia centrarse en la correcta aplicacion de la metodologia DevOps. Pues un correcto flujo de trabajo, optimizando la correcta entrega de artefactos, creara una eficiencia laboral y de desarrollo completa y armonica con el resto del ecosistema de desarrollo de la empresa. Herramientas como git, Github Actions, Docker y demas pueden automatizar todos estos flujos que antiguamente se hacian de manera manual de una forma concisa y correcta.
-
-**Matias**:
+**Matías:** La implementación de GitFlow en conjunto con integración continua demuestra la importancia del desacoplamiento entre el desarrollo activo y los despliegues a producción. Establecer ramas de soporte (`develop`) y aislamiento para características (`feature/`) minimiza colisiones entre desarrolladores, mientras que el uso de `hotfix/` garantiza resoluciones rápidas en fallos críticos sin interrumpir el trabajo en curso. Por su parte, la automatización mediante GitHub Actions actúa como un control de calidad preventivo esencial: verificar compilación, análisis y pruebas en cada push o pull request elimina el margen de error humano y acelera la entrega de software confiable.
 
 ## Uso de IA
+
+Se utilizó el asistente de inteligencia artificial Gemini como herramienta de apoyo metodológico y técnico durante el desarrollo de la evaluación:
+- **Estructuración y comandos:** Consulta y verificación de sintaxis de comandos Git para el ciclo de vida de GitFlow (apertura de ramas feature, hotfix y sincronizaciones).
+- **Configuración de CI:** Apoyo en la definición estructural del pipeline de GitHub Actions (`hola-mundo.yml`) y resolución de scopes de permisos en tokens de acceso.
+- **Apoyo de documentación:** Asistencia en la formulación de convenciones de commits y revisión técnica del informe.
+No se empleó IA para eludir los flujos colaborativos requeridos en el repositorio.
