@@ -67,3 +67,12 @@ mvn verify    # + verificación de cobertura JaCoCo (100% LINE, falla si baja)
 
 Para el presente proyecto se ha decidido tomar **GitFlow** , debido a la baja cantidad de pushes requeridos que puedan causar problemas de compatibilidad, asi se puede trabajar en conjunto y de manera separada para asegurar la estabilidad del proyecto
 
+**Matías:** La implementación de GitFlow en conjunto con integración continua demuestra la importancia del desacoplamiento entre el desarrollo activo y los despliegues a producción. Establecer ramas de soporte (`develop`) y aislamiento para características (`feature/`) minimiza colisiones entre desarrolladores, mientras que el uso de `hotfix/` garantiza resoluciones rápidas en fallos críticos sin interrumpir el trabajo en curso. Por su parte, la automatización mediante GitHub Actions actúa como un control de calidad preventivo esencial: verificar compilación, análisis y pruebas en cada push o pull request elimina el margen de error humano y acelera la entrega de software confiable.
+
+## Uso de IA
+
+Se utilizó el asistente de inteligencia artificial Gemini como herramienta de apoyo metodológico y técnico durante el desarrollo de la evaluación:
+- **Estructuración y comandos:** Consulta y verificación de sintaxis de comandos Git para el ciclo de vida de GitFlow (apertura de ramas feature, hotfix y sincronizaciones).
+- **Configuración de CI:** Apoyo en la definición estructural del pipeline de GitHub Actions (`hola-mundo.yml`) y resolución de scopes de permisos en tokens de acceso.
+- **Apoyo de documentación:** Asistencia en la formulación de convenciones de commits y revisión técnica del informe.
+No se empleó IA para eludir los flujos colaborativos requeridos en el repositorio.
